@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+$main-color: #143a74;
+$secondary-color: #50296a;
+$light-color: #01cdfe;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: 'Source Sans Pro';
+  background-color: $main-color;
+  height: 100%;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .container {
+    height: 70%;
+    width: 25%;
+    background-color: $secondary-color;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+
+    img {
+      height: 110px;
+      width: 110px;
+      border-radius: 100%;
+      border: 2px solid #fff;
+      margin: 2rem 0;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 4rem;
+
+      a {
+        height: 1rem;
+        text-decoration: none;
+        background-color: $light-color;
+        color: #fff;
+        width: 70%;
+        height: 3rem;
+        margin-top: 1rem;
+        border: 2px solid #fff;
+        padding: 0.7rem 7rem;
+        display: flex;
+        justify-content: center;
+
+        &:hover {
+          background-color: lighten($light-color, 15);
+          color: $main-color;
+          border-color: $main-color;
+        }
+      }
+    }
+
+    .footer {
+      width: 100%;
+
+      p {
+        width: 100%;
+        text-align: center;
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media (max-width: 380px) and (max-height: 812px) {
+  .wrapper .container {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    justify-content: space-evenly;
+
+    & .links a {
+      padding: 1rem 6rem;
+    }
+  }
+}

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: 'Source Sans Pro';
+  background-color: #143a74;
+  height: 100%;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper .container {
+  height: 70%;
+  width: 25%;
+  background-color: #50296a;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.wrapper .container img {
+  height: 110px;
+  width: 110px;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  margin: 2rem 0;
+}
+
+.wrapper .container .links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.wrapper .container .links a {
+  height: 1rem;
+  text-decoration: none;
+  background-color: #01cdfe;
+  color: #fff;
+  width: 70%;
+  height: 3rem;
+  margin-top: 1rem;
+  border: 2px solid #fff;
+  padding: 0.7rem 7rem;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper .container .links a:hover {
+  background-color: #4ddcfe;
+  color: #143a74;
+  border-color: #143a74;
+}
+
+.wrapper .container .footer {
+  width: 100%;
+}
+
+.wrapper .container .footer p {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+@media (max-width: 380px) and (max-height: 812px) {
+  .wrapper .container {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .wrapper .container .links a {
+    padding: 1rem 6rem;
+  }
+}
