@@ -40,6 +40,11 @@ body {
   margin: 2rem 0;
 }
 
+.wrapper .container p {
+  margin-top: -1rem;
+  color: #fff;
+}
+
 .wrapper .container .links {
   display: flex;
   flex-direction: column;
@@ -64,7 +69,8 @@ body {
 .wrapper .container .links a:hover {
   background-color: #4ddcfe;
   color: #143a74;
-  border-color: #143a74;
+  border: none;
+  transform: rotate(0.01turn);
 }
 
 .wrapper .container .footer {
@@ -86,5 +92,8 @@ body {
   }
   .wrapper .container .links a {
     padding: 1rem 6rem;
+  }
+  .wrapper .container .links a:hover {
+    transform: none;
   }
 }

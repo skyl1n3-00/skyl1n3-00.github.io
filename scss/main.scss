@@ -43,6 +43,11 @@ body {
       margin: 2rem 0;
     }
 
+    p {
+      margin-top: -1rem;
+      color: #fff;
+    }
+
     .links {
       display: flex;
       flex-direction: column;
@@ -65,7 +70,8 @@ body {
         &:hover {
           background-color: lighten($light-color, 15);
           color: $main-color;
-          border-color: $main-color;
+          border: none;
+          transform: rotate(0.01turn);
         }
       }
     }
@@ -91,6 +97,10 @@ body {
 
     & .links a {
       padding: 1rem 6rem;
+
+      &:hover {
+        transform: none;
+      }
     }
   }
 }
